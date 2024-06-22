@@ -1,6 +1,5 @@
-import Mustache, { name } from "mustache";
+import Mustache from "mustache";
 import fs from "fs/promises";
-import { title } from "process";
 
 test("Menggunakan Mustache", () => {
   const data = Mustache.render("Hello {{name}}", {name:"Fauzan"})
